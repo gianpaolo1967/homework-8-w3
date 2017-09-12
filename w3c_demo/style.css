@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.container {
+	margin: 0 auto;
+	max-width: 85%;
+	width: 1200px;
+}
+header {
+	height: 100px;
+	background: #ff9800;
+	padding: 10px;
+}
+header>p {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.cities {
+	background: #ffdd00;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+.london,
+.paris,
+.tokyo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 33.3333%;
+}
+.tokyo {
+	margin-top: -18px;
+}
+.photos {
+	margin-top: 5px;
+	width: 100%;
+}
+.text {
+	display: block;
+	margin-left: 10px;
+}
+img {
+	margin-left: 2px;
+	width: 48%;
+	height: auto;
+}
+h1 {
+	padding: 20px 0 20px 0;
+}
+@media screen and (max-width: 960px) {
+	img {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 720px) {
+	img {
+		width: 100%;
+	}
+	.london, .paris, .tokyo {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 480px) {
+	img {
+		width: 100%;
+	}
+	.london, .paris, .tokyo {
+		width: 100%;
+		overflow: hidden;
+	}
+	header>p, h1 {
+	font-size: 17px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+	span, p {
+		font-size: 12px;
+	}
+
+	header {
+		padding: 6px;
+		overflow: hidden;
+	}
+	h1 {
+		padding: 10px 0 10px 0;
+	}
+}
